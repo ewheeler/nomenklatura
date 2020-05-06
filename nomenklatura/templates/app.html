@@ -7,7 +7,7 @@
   <title>nomenklatura</title>
   <meta name="description" content="nomenklatura is a data cleaning service. It helps data users to remove duplicate and near-duplicate entity references from their data by creating canonical entity lists with aliases.">
 
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,300,700|Droid+Sans+Mono'
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700|Droid+Sans+Mono'
     rel='stylesheet' type='text/css'>
 
   {% assets "css" %}
@@ -43,11 +43,15 @@
             <a href="/api/2/sessions/logout" target="_self"><i class="fa fa-sign-out"></i> Sign Out</a>
           </li>
           <li>
-            <a href="/docs/introduction"><i class="fa fa-question-circle"></i> Help</a>
+            <a href="/docs/introduction" target="_blank"><i class="fa fa-question-circle"></i> Help</a>
           </li>
         </ul>
       </div>
     </nav>
+
+    {% if system_message %}
+    <div class="alert alert-warning system-message"><p>{{ system_message }}</p></div>
+    {% endif %}
 
     <div id="airlock" class="container">
       <div class="row" ng-view></div>
@@ -57,19 +61,19 @@
     <div class="container-fluid">
       <p><strong>nomenklatura.</strong>
       A data cleaning service that helps link and de-duplicate entities in raw data.<br/>
-      <a href="https://github.com/pudo/nomenklatura">
+      <a href="https://github.com/unicef/nomenklatura" target="_blank">
         <i class="icon-github"></i> GitHub
       </a>
       &middot;
-      <a href="https://github.com/pudo/nomenklatura/issues">
+      <a href="https://github.com/unicef/nomenklatura/issues" target="_blank">
         Report an issue
       </a>
       &middot;
-      <a href="https://pudo.org">pudo.org</a>
+      <a href="https://pudo.org" target="_blank">pudo.org</a>
       &middot;
-      <a href="http://okfnlabs.org/">OKFN Labs</a>
+      <a href="http://okfnlabs.org/" target="_blank">OKFN Labs</a>
       &middot;
-      <a href="http://mozillaopennews.org/">Knight-Mozilla OpenNews</a>.
+      <a href="http://mozillaopennews.org/" target="_blank">Knight-Mozilla OpenNews</a>.
       </p>
     </div>
   </footer>

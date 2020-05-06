@@ -1,0 +1,12 @@
+Release 1.0
+----------------------
+* upgrade yo python 3.8
+* pipenv
+* flask oauthlib
+* flake8 and isort
+
+
+Release 0.1
+----------------------
+
+* initial release
